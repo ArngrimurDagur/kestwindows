@@ -1,0 +1,16 @@
+FirstName,LastName,Username,OU,Password
+Alexander,Ragnarsson,aragnarsson,OU=IT,2024P@ssword
+Andrea,Klara Hauksdóttir,aklara,OU=IT,2024P@ssword
+Guðmundur,Steindórsson,gsteindorsson,OU=Management,2024P@ssword
+Halldór,V. Jónsson,hjonsson,OU=Management,2024P@ssword
+Harpa,Hjaltested,hhjaltested,OU=Management,2024P@ssword
+Hrannar,Arason,harason,OU=Finance,2024P@ssword
+Ingibjörg,J. Guðlaugsdóttir,igudlaugsdottir,OU=Finance,2024P@ssword
+Ísak,Leifsson,ileifsson,OU=Finance,2024P@ssword
+Jóhanna,Kristín Hafsteinsdóttir,jhafsteinsdottir,OU=Finance,2024P@ssword
+Kristján,Svanbergsson,ksvanbergsson,OU=Engineering,2024P@ssword
+Lárus,Arnar Gunnarsson,lgunnarsson,OU=Engineering,2024P@ssword
+Linda,B. Magnúsdóttir,lbmagnusdottir,OU=Engineering,2024P@ssword
+Rúdólf,Björnsson,rbjornsson,OU=Engineering,2024P@ssword
+Sigurbjörg,Ó. Stefánsdóttir,sstefansdottir,OU=Engineering,2024P@ssword
+Sigrún,Alda Jensdóttir,sjensdottir,OU=Engineering,2024P@ssword
