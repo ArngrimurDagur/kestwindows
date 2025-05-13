@@ -1,26 +1,20 @@
-# Path to shared folder
 $basePath = "C:\Shares\Users"
 
-# Import users from same CSV
 $users = Import-Csv "C:\Users.csv" -Delimiter ','
 
 foreach ($user in $users) {
     $username = $user.Notendanafn
     $folderPath = Join-Path $basePath $username
 
-    # Create folder if it doesn't exist
     if (-not (Test-Path $folderPath)) {
         New-Item -ItemType Directory -Path $folderPath
     }
 
-    # Set NTFS permissions
     $acl = Get-Acl $folderPath
     $acl.SetAccessRuleProtection($true, $false)  # Disable inheritance
 
-    # Remove inherited rules
     $acl.Access | ForEach-Object { $acl.RemoveAccessRule($_) }
 
-    # Allow only the user and Administrators
     $ruleUser = New-Object System.Security.AccessControl.FileSystemAccessRule("$username", "FullControl", "ContainerInherit,ObjectInherit", "None", "Allow")
     $ruleAdmins = New-Object System.Security.AccessControl.FileSystemAccessRule("Administrators", "FullControl", "ContainerInherit,ObjectInherit", "None", "Allow")
 
